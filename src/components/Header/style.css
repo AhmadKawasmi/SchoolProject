@@ -1,0 +1,9 @@
+
+.header{
+    width: 100vw;
+    background-color: blueviolet;
+    display: grid;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}

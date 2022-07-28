@@ -1,0 +1,82 @@
+.mainContainer{
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.formsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.btns{
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    background-color: #fff;
+    color: blueviolet;
+    border: 3px solid blueviolet;
+    border-radius: 40px;
+}
+
+.btns:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+    color: #fff;
+    transition: 0.4s ease all;
+}
+
+.form{
+    width: 450px;
+    height: 250px;
+    border: 2px solid blueviolet;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    align-items: center;
+    margin: 10px;
+}
+
+.formHeader{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 5fr 1fr;
+}
+
+.exitBtn{
+    width: 40%;
+    height: 40%;
+    background-color: blueviolet;
+    border-radius: 20px;
+    color: #fff;
+    font-size: large;
+    border: none;
+}
+
+.exitBtn:hover{
+    border: 2px solid blueviolet;
+    cursor: pointer;
+    color: blueviolet;
+    background-color: #fff;
+    
+    transition: 0.4s ease all;
+}
+
+.inputForm{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.inputForm input{
+    width: 60%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
