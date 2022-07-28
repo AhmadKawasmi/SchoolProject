@@ -22,7 +22,7 @@ TeacherRouter.post("/addTeacher", async function(req,res){
     const teacherDB = new Teacher(teacher)
 
      try {
-    const dataBaseRes = await teacherDB.collection("Teachers").save(teacher)
+    const dataBaseRes = await teacherDB.save()
     res.send(dataBaseRes)
   } catch (error) {
     res.sendStatus(500)

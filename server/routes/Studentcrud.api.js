@@ -23,7 +23,7 @@ StudentRouter.post("/addStudent", async function(req,res){
     const studentDB = new Student(student)
 
      try {
-    const dataBaseRes = await studentDB.collection("students").save(student)
+    const dataBaseRes = await studentDB.save()
     res.send(dataBaseRes)
   } catch (error) {
     res.sendStatus(500)
