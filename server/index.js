@@ -19,15 +19,16 @@ mongoose
 
 
 
+console.log(enviroment);
 if (enviroment == "development") {
     app.use(cors())
 }
 
-app.use(express.json({ extended : false}))
+app.use(express.json({ extended: false }))
 app.use("/student", studentRouter)
 app.use("/teacher", techerRouter)
 
 const PORT = process.env.PORT
-app.listen(PORT, function(){
+app.listen(PORT, function() {
     console.log("Up and running on port : " + PORT);
 })

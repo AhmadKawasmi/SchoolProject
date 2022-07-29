@@ -3,8 +3,8 @@ const mongoose = require("mongoose")
 const Schema = mongoose.Schema
 
 const TeacherSchema = new Schema({
-    TeacherName : String,
-    TeacherSubject : String,
+    teacherName: String,
+    teacherSubject: String,
 })
 
 const Teacher = mongoose.model("teacher", TeacherSchema);
