@@ -33,6 +33,9 @@ const Body = () => {
     const response = await axios.get(studentUrl)
     return response.data
   }
+  useEffect(() => {
+    getAllTeachers()
+  }, [])
 
   return (
     <div className="mainContainer">
@@ -72,7 +75,10 @@ const Body = () => {
           </div> : null
         }
       </div>
+      <div>
 
+      </div>
+          {allTeachers.map(t => <div>{t.anything}</div>)}
     </div>
   )
 }
